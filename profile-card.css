@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+body{
+    height:100vh;
+    background-color: rgb(209, 202, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-card {
+    position:relative;
+    border-radius: 18px;
+    background-color: white;
+    max-width:370px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgb(0,0,0,0.15);
+}
+.profile-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:35%;
+    border-radius: 20px 20px 0 0;
+    background-color:rgb(66, 66, 245) ;
+}
+.image{
+    position:relative;
+    width:150px;
+    height:150px;
+    border-radius: 75px;
+    background-color: rgb(5, 96, 145);
+    padding:3px;
+    margin-bottom: 13px;
+    margin-top: 28px;
+}
+.image .main-image {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 75px;
+    border:2px solid white;
+}
+.text-data{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+.name{
+    font-weight: 500;
+    font-size: 22px;
+}
+.job{
+    font-weight: 400;
+    font-size: 15px;
+}
+.social-links{
+    display:flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+a{
+    text-decoration: none;
+    margin:0 8px;
+    height:34px;
+    width: 34px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+button{
+    padding:6px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    color:white;
+    background-color: rgb(43, 43, 250);;
+    border:none;
+    border-radius: 23px;
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+button:hover{
+    opacity:0.95;
+}
+.analytics{
+    display:flex;
+    align-items: center;
+    margin-top: 23px;
+    margin-bottom: 63px;
+
+}
+.data {
+    display: flex;
+    align-items: center;
+    margin:0 8px;
+    padding-right:10px;
+    border-right: 1px solid rgb(180, 178, 178);
+}
+.data span{
+    font-size: 14px;
+    padding-left: 5px;
+}
+.data:last-child{
+    border:none;
+}
